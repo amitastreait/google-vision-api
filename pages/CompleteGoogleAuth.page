@@ -1,0 +1,7 @@
+<apex:page controller="GoogleTokenUtility" action="{!getAccessToken}" lightningStylesheets="true">
+  <apex:form >
+      <apex:pageBlock title="Google Authentication">
+          <apex:pagemessages ></apex:pagemessages>
+      </apex:pageBlock>
+  </apex:form>
+</apex:page>

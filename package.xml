@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demo</fullName>
+    <types>
+        <members>CreateUpdateMetadataUtils</members>
+        <members>GoogleCloudVisionAPI</members>
+        <members>GoogleTokenUtility</members>
+        <members>ObjectAnnonation</members>
+        <members>TextDetection</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>CompleteGoogleAuth</members>
+        <members>GoogleAUTH</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
+        <members>Google_Config__mdt.Content_Type__c</members>
+        <members>Google_Config__mdt.Token_URL__c</members>
+        <members>Google_Config__mdt.access_type__c</members>
+        <members>Google_Config__mdt.authorize_url__c</members>
+        <members>Google_Config__mdt.client_id__c</members>
+        <members>Google_Config__mdt.client_secret__c</members>
+        <members>Google_Config__mdt.grant_type__c</members>
+        <members>Google_Config__mdt.include_granted_scopes__c</members>
+        <members>Google_Config__mdt.model__c</members>
+        <members>Google_Config__mdt.prompt__c</members>
+        <members>Google_Config__mdt.redirect_uri__c</members>
+        <members>Google_Config__mdt.response_type__c</members>
+        <members>Google_Config__mdt.scope__c</members>
+        <members>Google_Token__mdt.External_Id__c</members>
+        <members>Google_Token__mdt.access_token__c</members>
+        <members>Google_Token__mdt.expires_in__c</members>
+        <members>Google_Token__mdt.expires_in_time__c</members>
+        <members>Google_Token__mdt.refresh_token__c</members>
+        <members>Google_Token__mdt.scope__c</members>
+        <members>Image_Detection__c.External_Id__c</members>
+        <members>Image_Detection__c.Locale__c</members>
+        <members>Image_Detection__c.Parent__c</members>
+        <members>OBJECT_LOCALIZATION__c.Score__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Google_Config__mdt</members>
+        <members>Google_Token__mdt</members>
+        <members>Image_Detection__c</members>
+        <members>OBJECT_LOCALIZATION__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Google_Config__mdt-Google Config Layout</members>
+        <members>Google_Token__mdt-Google Token Layout</members>
+        <members>Image_Detection__c-Image Detection Layout</members>
+        <members>OBJECT_LOCALIZATION__c-OBJECT LOCALIZATION Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Image_Detection__c.All</members>
+        <members>OBJECT_LOCALIZATION__c.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>GoogleAPI</members>
+        <members>GoogleVisionAPI</members>
+        <name>RemoteSiteSetting</name>
+    </types>
+    <version>49.0</version>
+</Package>
