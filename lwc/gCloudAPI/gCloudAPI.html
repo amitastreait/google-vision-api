@@ -1,0 +1,55 @@
+<!--
+  @description       : 
+  @author            : Amit Singh
+  @group             : 
+  @last modified on  : 08-23-2020
+  @last modified by  : Amit Singh
+  Modifications Log 
+  Ver   Date         Author       Modification
+  1.0   08-23-2020   Amit Singh   Initial Version
+-->
+<template>
+    <lightning-card  variant="Narrow"  title="gC API" icon-name="utility:einstein">
+        <template if:true={isLoading}>
+            <lightning-spinner variant="brand" alternative-text="Loading" size="small">
+            </lightning-spinner>
+        </template>
+        <div class="slds-var-m-around_large">
+            <lightning-layout multiple-rows>
+                <lightning-layout-item size="8" padding="around-small">
+                    <div class="slds-var-p-around_medium lgc-bg">
+                        <lightning-input accept="image/png,image/jpg,image/jpeg" 
+                            type="file"
+                            onchange={handleFilesChange} 
+                            label={fileLabel}>
+                        </lightning-input>
+                        &nbsp; {fileName} &nbsp;
+                        <lightning-combobox
+                            name="Select Task"
+                            label="Select Task"
+                            value={task}
+                            placeholder="Select Task"
+                            options={options}
+                            onchange={handleTaskChange} >
+                        </lightning-combobox>
+                        <lightning-input type="url" variant="standard" 
+                            name="Image URL" label="Image URL" 
+                            onchange={handleURLChange}
+                            >
+                        </lightning-input>
+                        <lightning-input type="url" variant="standard" 
+                            name="gC URL" label="gc URL" 
+                            onchange={handlegCURLChange}>
+                        </lightning-input>
+                    </div>
+                    <div class="slds-var-p-around_medium lgc-bg">
+                        <lightning-button variant="brand" 
+                            label="Call gC API" title="Prediction" 
+                            onclick={startPrediction}>
+                        </lightning-button>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </lightning-card>
+</template>
